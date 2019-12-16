@@ -1,5 +1,5 @@
 function getName() {
-  const url = 'https://stian.wtf' //document.URL;
+  const url = document.URL;
   const indexOfPeriod = url.indexOf('.');
   let name = url.substring(8, indexOfPeriod);
   return firstLetterToUpperCase(name);
