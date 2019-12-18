@@ -37,7 +37,8 @@ body {
 }
 
 #button-container {
-  margin-top: 5em;
+  position: fixed;
+  bottom: 2em;
   width: 100vw;
   display: flex;
   justify-content: center;
