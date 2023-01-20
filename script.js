@@ -13,16 +13,19 @@ async function fetchJoke() {
 }
 
 function getJokeWithNewName(name, joke) {
-  const chuck = "Chuck Norris";
-  joke = replaceAllOccurances(joke, chuck, name);
+  joke = replaceAllOccurances(joke, "Chuck Norris", name);
+  joke = replaceAllOccurances(joke, "Chuck", name);
   joke = replaceAllOccurances(joke, `${name}'`, `${name}'s`);
   return joke;
 }
 
 function getJokeWithNewGender(joke) {
   joke = replaceAllOccurances(joke, "he", "she");
+  joke = replaceAllOccurances(joke, "He", "She");
   joke = replaceAllOccurances(joke, "him", "her");
+  joke = replaceAllOccurances(joke, "Him", "Her");
   joke = replaceAllOccurances(joke, "his", "her");
+  joke = replaceAllOccurances(joke, "His", "Her");
   return joke;
 }
 
